@@ -16,6 +16,22 @@ The code is almost identical to the SSH brute forcer script , except the action 
 
 # Troubleshooting
 
-If the script runs , but does not
+If the script runs , but does not return a password:
+ - The wordlist may be insufficient. Try a larger wordlist
+ - If a larger wordlist fails , use crunch to make a wordlist of every possible combination . NOTE THIS WOULD MOST LIKELY TAKE AN IMPRACTICAL AMOUNT OF TIME
+ - Check that you have entered the username correctly
+
+If the script freezes:
+ - Try running the script with fewer threads.
+ - Check you have entered the ip/hostname of the server correctly
+ - Check that the server is running , and is responsive using ping.
+ - Check , if you are connecting over internet, that your internat connection is sufficent / working
+
+If recieving FAILED TO CONNECT : THREAD WILL SLEEP FOR 1 MINUTE:
+ - If this only occurs rarely , not to all threads , then it can be ignored
+ - Try running the script again , with fewer threads - I reccommend NO MORE THAN 20 , or else your attemps to connect may be stopped.
+ - Check that you are connected to the internet
+
+If you encounter any other errors when using this script , feel free to conact me and I will attempt to amend it.
 
 
